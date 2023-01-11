@@ -1,16 +1,10 @@
- interface Book {
-author?: string;
-pages: number;
-};
-// Ok
-const ok: Book = {
-author: "Rita Dove",
-pages: 80,
-};
-const missing: Book = {
-author: undefined,
-pages: 80
-};
-console.log(ok);
-console.log(missing);
-
+const songs = ["Juice", "Shake It Off", "What's Up"];
+function runOnSongs(getSongAt: (index: number) => string) {
+for (let i = 0; i < songs.length; i += 1) {
+console.log(getSongAt(i));
+}
+}
+function getSongAt(index: number) {
+return `${songs[index]}`;
+}
+runOnSongs(getSongAt); // Ok
