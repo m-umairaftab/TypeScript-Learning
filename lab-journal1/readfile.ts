@@ -1,5 +1,5 @@
-const fs = require('fs')
-fs.readFile('test.js', 'utf-8', (err, data) =>{
+const ts:any = require('fs')
+ts.readFile('test.js', 'utf-8', (err, data) =>{
     if(err){
         console.error(err)
         return

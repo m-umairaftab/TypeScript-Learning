@@ -1,8 +1,8 @@
-const content = "'Better Luck'"
-const fs = require('fs')
-fs.writeFile('test.js',content, err =>{
-    if(err){
+var content = "'better Luck'";
+var fs = require('fs');
+fs.writeFile('test.js', content, function (err) {
+    if (err) {
         console.error(err);
-        return
+        return;
     }
-})
+});
